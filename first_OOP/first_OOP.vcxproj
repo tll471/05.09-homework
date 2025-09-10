@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="point.cpp" />
+    <ClCompile Include="domashka10.cpp" />
     <ClCompile Include="robota.cpp" />
     <ClCompile Include="robota2.cpp" />
   </ItemGroup>

@@ -21,7 +21,7 @@
     <ClCompile Include="robota2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="point.cpp">
+    <ClCompile Include="domashka10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
