@@ -24,5 +24,8 @@
     <ClCompile Include="domashka10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="domashka_13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

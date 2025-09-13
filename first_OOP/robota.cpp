@@ -1,5 +1,5 @@
-#include<iostream>
-using namespace std;
+//#include<iostream>
+//using namespace std;
 
 
 //1. Создать класс «Лифт», представляющий собой предельно упрощенную модель лифта.
@@ -84,120 +84,120 @@ using namespace std;
 //Атрибуты комнаты : название, размеры, клеить потолок
 //или нет.Атрибуты рулона : название, размеры, цена.
 //
-class Flat
-{
-	int number;
-public:
-	Flat(int number_of_rooms)
-	{
-		number = number_of_rooms;
-	}
-	int GetNumber()
-	{
-		cout << "Number of rooms: " << number << endl;
-		return number;
-	}
-	int Just_Get_Number()
-	{
-		return number;
-	}
-	void SetNumber(int number3)
-	{
-		number = number3;
-	}
-
-};
-
-class Price
-{
-	int x;
-	int y;
-	int sum;
-public:
-	Price(int x, int y, int sum)
-	{
-		this->x = x;
-		this->y = y;
-		this->sum = sum;
-	}
-	int GetPrice()
-	{
-		sum = x * y * sum;
-		cout << "Your sum is: " << sum << " hryvnia" << endl;
-		return sum;
-	}
-	int Just_Get_Price()
-	{
-		return sum;
-	}
-	void SetX_Y(int x1, int y1)
-	{
-		x = x1;
-		y = y1;
-	}
-
-
-};
-
-class WallPaper
-{
-	int number_of_rooms;
-	int x, y;
-	int wallpaper_type;
-	Price obj1;
-	Flat obj2;
-public:
-	WallPaper(int number1, int x1, int y1, int wallpaper_type1) : x(x1), y(y1), number_of_rooms(number1), wallpaper_type(wallpaper_type1), obj1(x1, y1, wallpaper_type1), obj2(number1)
-	{
-		cout << "+" << endl;
-	}
-	void SetNumber1(int number2)
-	{
-		if (number2 <= 0)
-		{
-			cout << "Комнат не может быть <= 0! Число заменено на 5!" << endl;
-			obj2.SetNumber(5);
-		}
-		else
-		{
-			obj2.SetNumber(number2);
-		}
-	}
-	void SetX_and_Y(int x, int y)
-	{
-		if (x <= 0 || y <= 0)
-		{
-			cout << "Так нельзя, все числа заменены на 3!" << endl;
-			obj1.SetX_Y(3, 3);
-		}
-	}
-	void Print()
-	{
-		cout << obj2.GetNumber() << endl;
-		cout << obj1.GetPrice() << endl;
-
-		cout << "You needs: " << obj2.Just_Get_Number() * obj1.Just_Get_Price() << " money" << endl;
-
-	}
-	
-};
-
-
-int main()
-{
-	int number_count, x, y, wallpaper_type;
-	cout << "Enter a count of rooms: " << endl;
-	cin >> number_count;
-	cout << "Enter a length of wall (in meters, x): " << endl;
-	cin >> x;
-	cout << "Enter a height of wall (in meters, y): " << endl;
-	cin >> y;
-	cout << "Enter a wallpaper type write from (3 hryvnia to 10 hryvnia)" << endl;
-	cin >> wallpaper_type;
-
-	WallPaper obj_baze(number_count, x, y, wallpaper_type);
-	obj_baze.SetNumber1(number_count);
-	obj_baze.SetX_and_Y(x, y);
-	obj_baze.Print();
-
-}
+//class Flat
+//{
+//	int number;
+//public:
+//	Flat(int number_of_rooms)
+//	{
+//		number = number_of_rooms;
+//	}
+//	int GetNumber()
+//	{
+//		cout << "Number of rooms: " << number << endl;
+//		return number;
+//	}
+//	int Just_Get_Number()
+//	{
+//		return number;
+//	}
+//	void SetNumber(int number3)
+//	{
+//		number = number3;
+//	}
+//
+//};
+//
+//class Price
+//{
+//	int x;
+//	int y;
+//	int sum;
+//public:
+//	Price(int x, int y, int sum)
+//	{
+//		this->x = x;
+//		this->y = y;
+//		this->sum = sum;
+//	}
+//	int GetPrice()
+//	{
+//		sum = x * y * sum;
+//		cout << "Your sum is: " << sum << " hryvnia" << endl;
+//		return sum;
+//	}
+//	int Just_Get_Price()
+//	{
+//		return sum;
+//	}
+//	void SetX_Y(int x1, int y1)
+//	{
+//		x = x1;
+//		y = y1;
+//	}
+//
+//
+//};
+//
+//class WallPaper
+//{
+//	int number_of_rooms;
+//	int x, y;
+//	int wallpaper_type;
+//	Price obj1;
+//	Flat obj2;
+//public:
+//	WallPaper(int number1, int x1, int y1, int wallpaper_type1) : x(x1), y(y1), number_of_rooms(number1), wallpaper_type(wallpaper_type1), obj1(x1, y1, wallpaper_type1), obj2(number1)
+//	{
+//		cout << "+" << endl;
+//	}
+//	void SetNumber1(int number2)
+//	{
+//		if (number2 <= 0)
+//		{
+//			cout << "Комнат не может быть <= 0! Число заменено на 5!" << endl;
+//			obj2.SetNumber(5);
+//		}
+//		else
+//		{
+//			obj2.SetNumber(number2);
+//		}
+//	}
+//	void SetX_and_Y(int x, int y)
+//	{
+//		if (x <= 0 || y <= 0)
+//		{
+//			cout << "Так нельзя, все числа заменены на 3!" << endl;
+//			obj1.SetX_Y(3, 3);
+//		}
+//	}
+//	void Print()
+//	{
+//		cout << obj2.GetNumber() << endl;
+//		cout << obj1.GetPrice() << endl;
+//
+//		cout << "You needs: " << obj2.Just_Get_Number() * obj1.Just_Get_Price() << " money" << endl;
+//
+//	}
+//	
+//};
+//
+//
+//int main()
+//{
+//	int number_count, x, y, wallpaper_type;
+//	cout << "Enter a count of rooms: " << endl;
+//	cin >> number_count;
+//	cout << "Enter a length of wall (in meters, x): " << endl;
+//	cin >> x;
+//	cout << "Enter a height of wall (in meters, y): " << endl;
+//	cin >> y;
+//	cout << "Enter a wallpaper type write from (3 hryvnia to 10 hryvnia)" << endl;
+//	cin >> wallpaper_type;
+//
+//	WallPaper obj_baze(number_count, x, y, wallpaper_type);
+//	obj_baze.SetNumber1(number_count);
+//	obj_baze.SetX_and_Y(x, y);
+//	obj_baze.Print();
+//
+//}

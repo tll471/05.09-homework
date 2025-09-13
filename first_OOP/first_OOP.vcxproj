@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="domashka10.cpp" />
+    <ClCompile Include="domashka_13.cpp" />
     <ClCompile Include="robota.cpp" />
     <ClCompile Include="robota2.cpp" />
   </ItemGroup>
